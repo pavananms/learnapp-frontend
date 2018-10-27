@@ -32,7 +32,7 @@ import Background from './background.jpg';
 //
 
 var sectionStyle = {
-        width: "1940px",
+        width: "100%",
         height: "1000px",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

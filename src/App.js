@@ -6,6 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Background from './background.jpg';
+import styles from './frontend.css';
 
 //class App extends Component {
 //  render() {
@@ -53,6 +54,7 @@ class App extends Component {
   render(){
     return(
         <div className="Something">
+		    <h1 className="app12_header">hiiii</h1>
             <AppBar position="static" color="transparent">
               <Toolbar>
                 <Typography variant="title" color="transparent">

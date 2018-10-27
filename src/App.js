@@ -36,7 +36,7 @@ var sectionStyle = {
         height: "1000px",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
   backgroundImage: `url(${Background})`
 };
 

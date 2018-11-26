@@ -9,6 +9,7 @@ import Background from './background.jpg';
 import img1 from './1.jpg';
 import img2 from './2.jpg';
 import img3 from './3.jpg';
+import Button from '@material-ui/core/Button';
 import Title from './Title';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -75,26 +76,29 @@ class DemoCarousel extends Component {
   }
 }
 
+function MenuButtons(props){
+        //props.MenuItems
+        console.log(props.buttons);
+        var buttons = props.buttons.map((Item) => <Button>{Item}</Button>)
+        return <div>{buttons}</div>
+}   
 class App extends Component {
   render(){
+    const MenuItems = ["Login","FAQ","Ask A Question"];
     return(
       <div id="id1" className="Something" style={ sectionStyle }>
           <div id="id2">
           <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
               <Toolbar>
                 <Typography variant="title" color="transparent">
-                  Login                                        Questions   Class wise question papers
+                  <MenuButtons  buttons = {MenuItems}/>
                 </Typography>
               </Toolbar>
             </AppBar>
             <DemoCarousel>
             </DemoCarousel>
-            {/* <Title title={'We offer'}/> */}
-            {/* <Title title={'Here I am'}/> */}
-            {/* <Section> */}
-            {/* </Section>           */}
           </div>
-        </div>
+    </div>
     )
   }
 }

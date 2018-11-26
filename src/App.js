@@ -87,7 +87,7 @@ class App extends Component {
     const MenuItems = ["Login","FAQ","Ask A Question"];
     return(
       <div id="id1" className="Something" style={ sectionStyle }>
-          <div id="id2">
+        <div id="id2">
           <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
               <Toolbar>
                 <Typography variant="title" color="transparent">
@@ -97,8 +97,8 @@ class App extends Component {
             </AppBar>
             <DemoCarousel>
             </DemoCarousel>
-          </div>
-    </div>
+         </div>
+      </div>
     )
   }
 }

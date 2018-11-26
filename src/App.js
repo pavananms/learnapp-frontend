@@ -6,7 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Background from './background.jpg';
-
+import Button from '@material-ui/core/Button';
 //class App extends Component {
 //  render() {
 //    return (
@@ -48,20 +48,27 @@ class Section extends Component {
     );
   }
 }
-
+function MenuButtons(props){
+        //props.MenuItems
+        console.log(props.buttons);
+        var buttons = props.buttons.map((Item) => <Button>{Item}</Button>)
+        return <div>{buttons}</div>
+}
 class App extends Component {
   render(){
+    const MenuItems = ["Login","FAQ","Ask A Question"];
     return(
+
         <div className="Something">
             <AppBar position="static" color="transparent">
               <Toolbar>
                 <Typography variant="title" color="transparent">
-                  Login                                        Questions   Class wise question papers
+                  <MenuButtons  buttons = {MenuItems}/>
                 </Typography>
               </Toolbar>
             </AppBar>
             <Section>
-            </Section>            
+            </Section>
         </div>
       //      <div className = bg>
       // </div>

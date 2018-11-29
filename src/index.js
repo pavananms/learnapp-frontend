@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './styles/stylesheet.css'
-import Slider from './slider'
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
